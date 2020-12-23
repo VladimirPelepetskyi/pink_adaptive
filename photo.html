@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pink</title>
+</head>
+
+<body>
+	<header class="page-header">
+		<a href="" class="page-header__logo">
+			<picture>
+				<source media="(min-width: 1200px)" srcset=img/logotype-desktop.svg>
+				<source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+				<img class="page-header-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение «Пинк»">
+			</picture>
+		</a>
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active">
+						<a>Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="photo.html">Фотографии</a>
+					</li>
+					<li class="site-list__item">
+						<a href="form.html">Конкурс</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="page-main">
+		<section class="user-photos">
+			<h2 class="user-photos__title">Фотографии пользователей</h2>
+			<p class="user-photos__description">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+			<ul class="user-photos__list">
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Анны">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Анна</b>
+					<span class="user-photos__publish-time">(пять минут назад)</span>
+					<p class="user-photos__item-description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+					<span class="user-photos__likes">Нравится: 215</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Левона">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Левон</b>
+					<span class="user-photos__publish-time">(пять часов назад)</span>
+					<p class="user-photos__item-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+					<span class="user-photos__likes">Нравится: 356</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Антона">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Антон</b>
+					<span class="user-photos__publish-time">(12 часов назад)</span>
+					<p class="user-photos__item-description">Соседи будут рады!</p>
+					<span class="user-photos__likes">Нравится: 666</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Бориса">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Борис</b>
+					<span class="user-photos__publish-time">(20 часов назад)</span>
+					<p class="user-photos__item-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+					<span class="user-photos__likes">Нравится: 215</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Бориса">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Сергей</b>
+					<span class="user-photos__publish-time">(25 часов назад)</span>
+					<p class="user-photos__item-description">Самая кубанская в мире!</p>
+					<span class="user-photos__likes">Нравится: 4</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Максима">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Максим</b>
+					<span class="user-photos__publish-time">(40 часов назад)</span>
+					<p class="user-photos__item-description">Где снег-то?</p>
+					<span class="user-photos__likes">Нравится: 150</span>
+				</li>
+				<li class="user-photos__item user-photos__item-of-day">
+					<p class="user-photos_wrapper-picture">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+							<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+							<source media="(min-width: 1200px)" srcset="img/ 1x, img/ 2x">
+							<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+							<img class="user-photos__picture" src="img/" srcset="img/ 2x" alt="Фото Надеждый">
+						</picture>
+					</p>
+					<b class="user-photos__author-name">Надежда</b>
+					<span class="user-photos__publish-time">(45 часов назад)</span>
+					<p class="user-photos__item-description">Всем GM и взаимные лайки!</p>
+					<span class="user-photos__likes">Нравится: 2560</span>
+				</li>
+			</ul>
+		</section>
+		<section class="upload">
+			<h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+			<p class="upload_wrapper-picture">
+				<picture>
+					<source type="image/webp" media="(min-width: 660px)" srcset="img/1x, img/ 2x">
+					<source type="image/webp" srcset="img/ 1x, img/ 2x">
+
+					<source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+					<img class="upload__picture" src="img/" srcset="img/ 2x" alt="Фото для примера перед загрузкой">
+				</picture>
+			</p>
+			<form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+				<ul class="upload__list">
+					<li class="upload__item upload__item--framing">
+						<div class="upload__range-controls">
+							<div class="upload__scale"></div>
+							<div class="upload__toggle upload__toggle--framing"></div>
+						</div>
+					</li>
+					<li class="upload__item upload__item--filling">
+						<div class="upload__range-controls">
+							<div class="upload__scale"></div>
+							<div class="upload__toggle upload__toggle--filling"></div>
+						</div>
+					</li>
+					<li class="upload__item upload__item--contrast">
+						<div class="upload__range-controls">
+							<div class="upload__scale"></div>
+							<div class="upload__toggle upload__toggle--contrast"></div>
+						</div>
+					</li>
+				</ul>
+				<button class="upload__button-submit" type="submit">Запостить</button>
+				<button class="upload__button-reset" type="reset">Отмена</button>
+			</form>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<a href="" class="page-footer__logo">
+			<picture>
+				<source media="(min-width: 1200px)" srcset=img/logotype-desktop.svg>
+				<source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+				<img class="page-footer-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение «Пинк»">
+			</picture>
+		</a>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link social__link--twitter" href="#">
+						<img width="18" height="14" src="img/twitter.svg" alt="Иконка социальной сети Твиттер">
+					</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--facebook" href="#">
+						<img width="9" height="18" src="img/facebook.svg" alt="Иконка социальной сети Фейсбук">
+					</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--youtube" href="#">
+						<img width="15" height="13" src="img/youtube.svg" alt="Иконка видеохостинга Ютуб">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<b class="copyright__text">Разработано:</b>
+			<a class="copyright__link button" href="#">HTML Academy</a>
+		</div>
+	</footer>
+
+	<section class="failure failure-none">
+		<h2 class="failure__title">Что-то пошло не так!</h2>
+		<p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+		<button class="failure__confirm">Ок</button>
+	</section>
+
+	<section class="success success-none">
+		<h2 class="success__title">Ваша заявка отправлена</h2>
+		<p class="success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+		<button class="success__close">Закрыть окно</button>
+	</section>
+</body>
+
+</html>
