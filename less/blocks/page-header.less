@@ -4,5 +4,15 @@
 
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: center 0px;	
+	background-position: center 0px;
+	background-size: 700px auto;
+
+	@media (min-resolution: @retina-dpi),
+	(min-resolution: @retina-dppx) {
+		background-image: url("../img/bg-back-mobile@2x.jpg");
+	}
+}
+
+.page-header-nojs {
+	background-position: center 298px;
 }
