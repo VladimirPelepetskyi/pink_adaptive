@@ -53,7 +53,7 @@
 	<main class="page-main">
 		<h1 class="visually-hidden">Главная страница приложения «Пинк»</h1>
 		<section class="information">
-			<h2 class="information__header-title">Устали от серости мегаполиса? <br> Нам есть, что вам предложить!</h2>
+			<h2 class="information__header-title">Устали от серости мегаполиса? <br><br> Нам есть, что вам предложить!</h2>
 			<ul class="information__list">
 				<li class="information__item">
 					<h3 class="information__title">Поднимает настроение</h3>
@@ -68,6 +68,53 @@
 					<p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 				</li>
 			</ul>
+			<ul class="information__images">
+				<li class="information__image">
+					<p class="information__image-wrapper">
+						<picture>
+							<!--
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+-->
+
+							<source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+							<source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+							<img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="Изображение смартфона">
+						</picture>
+					</p>
+				</li>
+				<li class="information__image">
+					<p class="information__image-wrapper">
+						<picture>
+							<!--
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+-->
+
+							<source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+							<source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+							<img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="Изображение смартфона">
+						</picture>
+					</p>
+				</li>
+				<li class="information__image">
+					<p class="information__image-wrapper">
+						<picture>
+							<!--
+							<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+-->
+
+							<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+							<source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+							<img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Изображение смартфона">
+						</picture>
+					</p>
+				</li>
+			</ul>
 		</section>
 		<section class="research">
 			<h2 class="visually-hidden">Результаты исследований использования приложения «Пинк»</h2>
@@ -78,7 +125,7 @@
 		<section class="reviews">
 			<h2 class="visually-hidden">Отзывы о нас</h2>
 			<ul class="reviews__list">
-				<li class="reviews__item">
+				<li class="reviews__item reviews__item-show">
 					<h3 class="reviews__author-name">Николай Петров</h3>
 					<span class="reviews__author-position">25 лет, водитель трамвая</span>
 					<p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -105,7 +152,7 @@
 		<section class="prices">
 			<h2 class="visually-hidden">Наши цены</h2>
 			<table class="prices__table">
-				<thead>
+				<thead class="prices__head">
 					<tr>
 						<td class="prices__title"></td>
 						<td class="prices__title">
@@ -122,24 +169,24 @@
 						</td>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="prices__body">
 					<tr>
 						<td class="prices__features">Розовый фильтр</td>
-						<td class="prices__check prices__check--yes"></td>
-						<td class="prices__check prices__check--yes"></td>
-						<td class="prices__check prices__check--yes"></td>
+						<td class="prices__check prices__check--yes">Розовый фильтр</td>
+						<td class="prices__check prices__check--yes">Розовый фильтр</td>
+						<td class="prices__check prices__check--yes">Розовый фильтр</td>
 					</tr>
 					<tr>
 						<td class="prices__features">Смайлики</td>
-						<td class="prices__check prices__check--no"></td>
-						<td class="prices__check prices__check--yes"></td>
-						<td class="prices__check prices__check--yes"></td>
+						<td class="prices__check prices__check--no">Смайлики</td>
+						<td class="prices__check prices__check--yes">Смайлики</td>
+						<td class="prices__check prices__check--yes">Смайлики</td>
 					</tr>
 					<tr>
 						<td class="prices__features">Комментарии</td>
-						<td class="prices__check prices__check--no"></td>
-						<td class="prices__check prices__check--no"></td>
-						<td class="prices__check prices__check--yes"></td>
+						<td class="prices__check prices__check--no">Комментарии</td>
+						<td class="prices__check prices__check--no">Комментарии</td>
+						<td class="prices__check prices__check--yes">Комментарии</td>
 					</tr>
 				</tbody>
 			</table>
@@ -169,7 +216,18 @@
 		<section class="map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
 			<p class="map__wrapper">
-				<img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				<picture>
+<!--
+					<source type="image/webp" media="(min-width: 1200px)" srcset="img/ibg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+					<source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+					<source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+-->
+
+
+					<source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+					<source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+					<img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				</picture>
 			</p>
 		</section>
 	</main>
