@@ -150,51 +150,54 @@
 			</p>
 		</section>
 		<section class="prices">
+			Треугольник вверху
 			<h2 class="visually-hidden">Наши цены</h2>
-			<table class="prices__table">
-				<thead class="prices__head">
-					<tr>
-						<td class="prices__title"></td>
-						<td class="prices__title">
-							База <br>
-							<span class="prices__cost">1,99 USD</span>
-						</td>
-						<td class="prices__title">
-							Стандарт <br>
-							<span class="prices__cost">3,99 USD</span>
-						</td>
-						<td class="prices__title">
-							Анлим <br>
-							<span class="prices__cost">9,99 USD</span>
-						</td>
-					</tr>
-				</thead>
-				<tbody class="prices__body">
-					<tr>
-						<td class="prices__features">Розовый фильтр</td>
-						<td class="prices__check prices__check--yes">Розовый фильтр</td>
-						<td class="prices__check prices__check--yes">Розовый фильтр</td>
-						<td class="prices__check prices__check--yes">Розовый фильтр</td>
-					</tr>
-					<tr>
-						<td class="prices__features">Смайлики</td>
-						<td class="prices__check prices__check--no">Смайлики</td>
-						<td class="prices__check prices__check--yes">Смайлики</td>
-						<td class="prices__check prices__check--yes">Смайлики</td>
-					</tr>
-					<tr>
-						<td class="prices__features">Комментарии</td>
-						<td class="prices__check prices__check--no">Комментарии</td>
-						<td class="prices__check prices__check--no">Комментарии</td>
-						<td class="prices__check prices__check--yes">Комментарии</td>
-					</tr>
-				</tbody>
-			</table>
-			<p class="prices__toggles slider__toggles">
-				<button class="price__toggle price__toggle--active" type="button">1</button>
-				<button class="price__toggle" type="button">2</button>
-				<button class="price__toggle" type="button">3</button>
-			</p>
+			<div class="prices-wrapper">
+				<table class="prices__table prices__table--start">
+					<thead class="prices__head">
+						<tr>
+							<td class="prices__features-header"></td>
+							<td class="prices__title">
+								База <br>
+								<span class="prices__cost">1,99 USD</span>
+							</td>
+							<td class="prices__title price__title--hit">
+								Стандарт <br>
+								<span class="prices__cost">3,99 USD</span>
+							</td>
+							<td class="prices__title">
+								Анлим <br>
+								<span class="prices__cost">9,99 USD</span>
+							</td>
+						</tr>
+					</thead>
+					<tbody class="prices__body">
+						<tr>
+							<td class="prices__features">Розовый фильтр</td>
+							<td class="prices__check prices__check--yes">Розовый фильтр</td>
+							<td class="prices__check prices__check--yes">Розовый фильтр</td>
+							<td class="prices__check prices__check--yes">Розовый фильтр</td>
+						</tr>
+						<tr>
+							<td class="prices__features">Смайлики</td>
+							<td class="prices__check prices__check--no">Смайлики</td>
+							<td class="prices__check prices__check--yes">Смайлики</td>
+							<td class="prices__check prices__check--yes">Смайлики</td>
+						</tr>
+						<tr>
+							<td class="prices__features">Комментарии</td>
+							<td class="prices__check prices__check--no">Комментарии</td>
+							<td class="prices__check prices__check--no">Комментарии</td>
+							<td class="prices__check prices__check--yes">Комментарии</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="prices__toggles slider__toggles">
+					<button class="price__toggle" type="button">1</button>
+					<button class="price__toggle price__toggle--active" type="button">2</button>
+					<button class="price__toggle" type="button">3</button>
+				</p>
+			</div>
 		</section>
 		<section class="contacts">
 			<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
@@ -217,7 +220,7 @@
 			<h2 class="visually-hidden">Как до нас добраться</h2>
 			<p class="map__wrapper">
 				<picture>
-<!--
+					<!--
 					<source type="image/webp" media="(min-width: 1200px)" srcset="img/ibg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
 					<source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
 					<source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
