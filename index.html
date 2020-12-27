@@ -150,10 +150,9 @@
 			</p>
 		</section>
 		<section class="prices">
-			Треугольник вверху
 			<h2 class="visually-hidden">Наши цены</h2>
 			<div class="prices-wrapper">
-				<table class="prices__table prices__table--start">
+				<table class="prices__table prices__table--middle prices__table-tablet">
 					<thead class="prices__head">
 						<tr>
 							<td class="prices__features-header"></td>
@@ -193,9 +192,9 @@
 					</tbody>
 				</table>
 				<p class="prices__toggles slider__toggles">
-					<button class="price__toggle" type="button">1</button>
-					<button class="price__toggle price__toggle--active" type="button">2</button>
-					<button class="price__toggle" type="button">3</button>
+					<button class="price__toggle pt1-js" type="button">1</button>
+					<button class="price__toggle pt2-js price__toggle--active" type="button">2</button>
+					<button class="price__toggle pt3-js" type="button">3</button>
 				</p>
 			</div>
 		</section>
@@ -218,20 +217,7 @@
 		</section>
 		<section class="map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<p class="map__wrapper">
-				<picture>
-					<!--
-					<source type="image/webp" media="(min-width: 1200px)" srcset="img/ibg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-					<source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-					<source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
--->
-
-
-					<source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-					<source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-					<img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-				</picture>
-			</p>
+			<div class="map__wrapper"></div>
 		</section>
 	</main>
 	<footer class="page-footer">
@@ -267,6 +253,8 @@
 		</div>
 	</footer>
 	<script src="scripts/main-nav.js"></script>
+	<script src="scripts/prices.js"></script>
+
 </body>
 
 </html>
