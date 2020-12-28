@@ -1,5 +1,17 @@
 .contacts {
-	padding: 45px 20px 0px;
+	position: relative;
+	padding: 45px 20px 37px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -30px;
+
+		border-top: 30px solid #ffffff;
+		border-right: 50vw solid transparent;
+		border-left: 50vw solid transparent;
+	}
 }
 
 .contacts__title {
