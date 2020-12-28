@@ -9,7 +9,6 @@
 }
 .index-central {
   margin: 0 auto;
-  width: 84%;
   max-width: 960px;
 }
 @font-face {
@@ -71,10 +70,20 @@ img {
 .page-header-nojs {
   background-position: center 298px;
 }
+@media (min-width: 660px) {
+  .page-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+}
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 66px;
 }
 .main-nav--closed {
   background-color: rgba(28, 37, 48, 0.3);
@@ -170,6 +179,18 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid #000000;
 }
+@media (min-width: 660px) {
+  .main-nav__wrapper-logo {
+    min-height: 110px;
+  }
+  .main-nav--closed .main-nav__toggle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-nav__toggle {
+    top: auto;
+  }
+}
 .intro {
   padding: 396px 20px 30px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -208,6 +229,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .intro__text {
   margin: 0;
@@ -219,6 +241,47 @@ img {
   font-weight: lighter;
   color: #ffffff;
   text-align: center;
+}
+@media (min-width: 660px) {
+  .intro {
+    display: flex;
+    min-height: 620px;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0px 20px 0px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    background-position: -17px 100%;
+  }
+  .intro__wrapper {
+    width: 300px;
+    margin: auto 0;
+  }
+  .intro__title {
+    margin: 0;
+    padding: 0;
+    padding: 0 30px;
+    display: block;
+    font-family: "OpenSans-Light";
+    font-size: 40px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+  }
+  .intro__button-download {
+    margin-top: 35px;
+  }
+  .intro__img-wrapper {
+    width: 205px;
+    margin: 46px auto 36px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+  }
 }
 .information {
   padding-top: 40px;
