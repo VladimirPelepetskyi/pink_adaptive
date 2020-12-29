@@ -83,3 +83,39 @@
 	background-color: #ffffff;
 	border: 3px solid #283645;
 }
+
+@media (min-width:@tablet-width) {
+	.reviews {
+		.index-central;
+	}
+
+	.reviews__item-show {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.reviews__author-name {
+		margin-bottom: 3px;
+	}
+
+	.reviews__author-position {
+		display: block;
+
+		font-family: "OpenSans-Regular";
+		font-size: 14px;
+		line-height: 30px;
+		text-align: center;
+		color: #283645;
+
+	}
+
+	.reviews__description {
+		margin-bottom: 37px;
+
+		order: -1;
+	}
+
+	.reviews__toggles {
+		margin-top: 33px;
+	}
+}
