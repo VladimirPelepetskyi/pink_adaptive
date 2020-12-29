@@ -1,38 +1,53 @@
 .information {
-	padding-top: 40px;
+	background-color: #f2f2f2;
+}
+
+.information__header-wrapper {
+	position: relative;
+
+	padding: 40px 20px 71px;
+	background-color: #ffffff;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border-right: 100vw solid #f2f2f2;
+		border-top: 32px solid transparent;
+	}
 }
 
 .information__header-title {
 	.text-reset;
-	margin-bottom: 71px;
-	padding-left: 20px;
-	padding-right: 20px;
-
 	font-family: "OpenSans-Light";
 	font-size: 24px;
 	font-weight: lighter;
 	color: #283645;
 	text-align: center;
+}
 
-	background-color: #ffffff;
+.br-tablet {
+	display: none;
+}
+
+.information__list-wrapper {
+	position: relative;
+
+	padding: 54px 20px 0px;
+
+	//	&::before {
+	//		content: "";
+	//		position: absolute;
+	//		top: -32px;
+	//		left: 0;
+	//		border-right: 100vw solid #f2f2f2;
+	//		border-top: 32px solid transparent;
+	//	}
 }
 
 .information__list {
-	position: relative;
-
 	.list-reset;
-	padding: 54px 20px 0px;
-
-	background-color: #f2f2f2;
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: -32px;
-		left: 0;
-		border-right: 100vw solid #f2f2f2;
-		border-top: 32px solid transparent;
-	}
 }
 
 .information__item {
@@ -69,7 +84,6 @@
 .information__images {
 	.list-reset;
 	padding-top: 40px;
-	background-color: #f2f2f2;
 }
 
 .information__image-wrapper {
@@ -81,4 +95,63 @@
 
 .information__image:nth-child(-n+2) {
 	display: none;
+}
+
+@media (min-width:@tablet-width) {
+
+	.information__header-wrapper {
+		padding: 53px 20px 92px;
+	}
+
+	.information__header-title {
+		.index-central;
+		font-size: 40px;
+	}
+
+	.br-mobile {
+		display: none;
+	}
+
+	.br-tablet {
+		display: block;
+	}
+
+	.information__list-wrapper {
+		.index-central;
+		display: flex;
+		padding: 27px 20px 0px;
+	}
+
+	.information__list {
+		margin: auto;
+		order: 1;
+	}
+
+	.information__item {
+		margin-bottom: 33px;
+
+		&:last-child {
+			margin-bottom: 33px;
+		}
+	}
+
+	.information__title,
+	.information__description {
+		text-align: left;
+	}
+
+	.information__image-wrapper {
+		width: 268px;
+	}
+
+	.information__images {
+		padding: 0;
+		margin: auto;
+		margin-right: 42px;
+		z-index: 2;
+	}
+
+	.information__image {
+		margin-top: -74px;
+	}
 }
