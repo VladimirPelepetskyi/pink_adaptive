@@ -413,6 +413,51 @@ img {
 .research {
   display: none;
 }
+@media (min-width: 660px) {
+  .research {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 99px 20px 84px;
+    display: block;
+    background-image: url("../img/24hours-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+  }
+  .research__wrapper {
+    margin-left: 310px;
+  }
+  .research__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    font-family: "OpenSans-Bold";
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+  }
+  .research__description {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    color: #283645;
+  }
+  .research__button {
+    display: block;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #D22856;
+    cursor: pointer;
+  }
+}
 .reviews {
   position: relative;
   padding: 43px 20px 66px;
