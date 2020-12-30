@@ -462,14 +462,6 @@ img {
   position: relative;
   padding: 43px 20px 66px;
 }
-.reviews::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-right: 100vw solid #f2f2f2;
-  border-top: 25px solid transparent;
-}
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -565,6 +557,14 @@ img {
   background-color: #f2f2f2;
   overflow: hidden;
 }
+.prices::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  border-right: 100vw solid #f2f2f2;
+  border-top: 25px solid transparent;
+}
 .prices-wrapper {
   margin: 0 auto;
   width: 280px;
@@ -600,10 +600,6 @@ img {
   background-color: #283645;
   border-bottom: 2px solid #283645;
   border-right: 2px solid #F2F2F2;
-}
-.prices__title:first-child {
-  border-right: none;
-  background-color: transparent;
 }
 .prices__title:last-child {
   border-right: 2px solid #283645;
@@ -678,6 +674,64 @@ img {
 .price__toggle--active {
   background-color: #ffffff;
   border: 3px solid #283645;
+}
+@media (min-width: 660px) {
+  .prices {
+    padding: 38px 20px 70px;
+    overflow: visible;
+  }
+  .prices-wrapper {
+    width: auto;
+    max-width: 960px;
+  }
+  .prices__table {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .prices__table--start,
+  .prices__table--middle,
+  .prices__table--end {
+    transform: initial;
+  }
+  .prices__head td {
+    width: 25%;
+  }
+  .prices__features-header,
+  .prices__features {
+    display: table-cell;
+  }
+  .prices__title {
+    padding: 14px 20px 8px;
+    font-size: 16px;
+  }
+  .prices__title:nth-child(2) {
+    border-top-left-radius: 3px;
+  }
+  .prices__title:last-child {
+    border-top-right-radius: 3px;
+  }
+  .price__title--hit::before {
+    top: 7px;
+    left: -34px;
+  }
+  .prices__cost {
+    font-size: 18px;
+    margin-top: 1px;
+  }
+  .prices__body td {
+    padding: 9px 15px 6px 24px;
+    text-transform: none;
+  }
+  .prices__body .prices__check--yes,
+  .prices__body .prices__check--no {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-position: 50% 50%;
+  }
+  .prices__toggles {
+    display: none;
+  }
 }
 .contacts {
   position: relative;
