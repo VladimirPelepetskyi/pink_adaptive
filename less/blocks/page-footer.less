@@ -63,12 +63,18 @@
 	color: #283645;
 }
 
-@media (min-width:560px) and (max-width:659px) {
+@media (min-width:560px) {
 	.page-footer {
-		min-height: 0px;
+		.index-central;
+		padding: 36px 20px 37px;
+		min-height: 127px;
 
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
+	}
+
+	.page-footer__logo {
+		align-self: flex-start;
 	}
 
 	.page-footer__social {
@@ -81,5 +87,12 @@
 
 	.page-footer__copyright {
 		margin-top: 0px;
+	}
+}
+
+@media (min-width:1200px) {
+	.page-footer {
+		padding: 70px 0px 72px;
+		min-height: 197px;
 	}
 }
