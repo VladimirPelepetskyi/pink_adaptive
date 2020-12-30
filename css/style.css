@@ -9,7 +9,7 @@
 }
 .index-central {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 940px;
 }
 @font-face {
   font-weight: lighter;
@@ -247,7 +247,7 @@ img {
     display: flex;
     min-height: 620px;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
     padding: 0px 20px 0px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -368,7 +368,7 @@ img {
   }
   .information__header-title {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
     font-size: 40px;
   }
   .br-mobile {
@@ -379,7 +379,7 @@ img {
   }
   .information__list-wrapper {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
     display: flex;
     padding: 27px 20px 0px;
   }
@@ -416,7 +416,7 @@ img {
 @media (min-width: 660px) {
   .research {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
     padding: 99px 20px 84px;
     display: block;
     background-image: url("../img/24hours-tablet.svg");
@@ -526,7 +526,7 @@ img {
 @media (min-width: 660px) {
   .reviews {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
   }
   .reviews__item-show {
     display: flex;
@@ -682,7 +682,7 @@ img {
   }
   .prices-wrapper {
     width: auto;
-    max-width: 960px;
+    max-width: 940px;
   }
   .prices__table {
     margin: 0 auto;
@@ -793,6 +793,10 @@ img {
   .contacts {
     padding: 54px 20px 25px;
   }
+  .contacts::after {
+    bottom: -68px;
+    border-top: 68px solid #ffffff;
+  }
   .contacts__title {
     padding: 0 21px;
     margin-bottom: 49px;
@@ -820,8 +824,26 @@ img {
   width: 100%;
   height: 200px;
   background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-mobile@1x.jpg) no-repeat #eae6dd;
-  background-size: 36px 35px, auto 351px;
+  background-size: 36px 36px, auto 351px;
   background-position: 50% 57.5%, 50% 46.5%;
+}
+@media (min-width: 660px) {
+  .map__wrapper {
+    width: 100%;
+    height: 373px;
+    background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-tablet@1x.jpg) no-repeat #eae6dd;
+    background-size: 36px 36px, auto 848px;
+    background-position: 50% 56.5%, 50% 73.5%;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .map__wrapper {
+    width: 100%;
+    height: 373px;
+    background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-tablet@2x.jpg) no-repeat #eae6dd;
+    background-size: 36px 36px, auto 848px;
+    background-position: 50% 56.5%, 50% 73.5%;
+  }
 }
 .page-footer {
   padding: 40px 0px;

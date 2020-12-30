@@ -3,6 +3,28 @@
 	height: 200px;
 
 	background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-mobile@1x.jpg) no-repeat #eae6dd;
-	background-size: 36px 35px, auto 351px;
+	background-size: 36px 36px, auto 351px;
 	background-position: 50% 57.5%, 50% 46.5%;
+}
+
+@media (min-width:@tablet-width) {
+	.map__wrapper {
+		width: 100%;
+		height: 373px;
+
+		background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-tablet@1x.jpg) no-repeat #eae6dd;
+		background-size: 36px 36px, auto 848px;
+		background-position: 50% 56.5%, 50% 73.5%;
+
+
+		@media (min-resolution: @retina-dpi),
+		(min-resolution: @retina-dppx) {
+			width: 100%;
+			height: 373px;
+
+			background: url(../img/icon-map-marker.svg) no-repeat, url(../img/bg-map-tablet@2x.jpg) no-repeat #eae6dd;
+			background-size: 36px 36px, auto 848px;
+			background-position: 50% 56.5%, 50% 73.5%;
+		}
+	}
 }
