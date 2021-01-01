@@ -733,6 +733,22 @@ img {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .prices {
+    padding: 70px 0px 98px;
+  }
+  .prices__title {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+  .prices__cost {
+    font-size: 24px;
+  }
+  .prices__body td {
+    padding: 17px 24px 12px;
+    font-size: 18px;
+  }
+}
 .contacts {
   position: relative;
   padding: 45px 20px 37px;
