@@ -533,7 +533,8 @@ img {
     flex-direction: column;
   }
   .reviews__author-name {
-    margin-bottom: 3px;
+    font-size: 20px;
+    margin-bottom: 2px;
   }
   .reviews__author-position {
     display: block;
@@ -545,10 +546,94 @@ img {
   }
   .reviews__description {
     margin-bottom: 37px;
+    font-size: 18px;
     order: -1;
   }
   .reviews__toggles {
     margin-top: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    padding: 187px 0px 119px;
+    background-image: url("../img/doublepoint.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+  }
+  .reviews__author-name {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  .reviews__author-position {
+    font-size: 18px;
+  }
+  .reviews__description {
+    max-width: 700px;
+    margin: 0px auto 37px;
+  }
+  .reviews__wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    height: 41px;
+    width: 100%;
+    top: 43%;
+  }
+  .reviews__prev,
+  .reviews__next {
+    position: relative;
+    padding: 0;
+    display: block;
+    width: 22px;
+    font-size: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .reviews__prev::before {
+    content: "";
+    position: absolute;
+    top: -3.4px;
+    left: 11px;
+    width: 2px;
+    height: 28px;
+    transform: rotate(45deg);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+  .reviews__prev::after {
+    content: "";
+    position: absolute;
+    top: 16.5px;
+    left: 9.5px;
+    width: 2px;
+    height: 28px;
+    transform: rotate(-45deg);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+  .reviews__next::before {
+    content: "";
+    position: absolute;
+    top: -3.4px;
+    left: 11px;
+    width: 2px;
+    height: 28px;
+    transform: rotate(-45deg);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+  .reviews__next::after {
+    content: "";
+    position: absolute;
+    top: 16.5px;
+    left: 9.5px;
+    width: 2px;
+    height: 28px;
+    transform: rotate(45deg);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+  .reviews__toggles {
+    display: none;
   }
 }
 .prices {
