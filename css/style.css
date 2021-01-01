@@ -415,10 +415,12 @@ img {
 }
 @media (min-width: 660px) {
   .research {
+    display: block;
+  }
+  .research__wrapper-top {
     margin: 0 auto;
     max-width: 940px;
     padding: 99px 20px 84px;
-    display: block;
     background-image: url("../img/24hours-tablet.svg");
     background-repeat: no-repeat;
     background-position: 5% 50%;
@@ -456,6 +458,11 @@ img {
     font-weight: normal;
     color: #D22856;
     cursor: pointer;
+  }
+}
+@media (min-width: 1200px) {
+  .research {
+    background-color: #f2f2f2;
   }
 }
 .reviews {
