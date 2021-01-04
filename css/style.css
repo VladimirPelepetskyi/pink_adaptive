@@ -410,6 +410,72 @@ img {
     margin-top: -74px;
   }
 }
+@media (min-width: 1200px) {
+  .information__header-wrapper {
+    padding: 92px 0px 165px;
+  }
+  .information__header-wrapper::after {
+    border-top: 90px solid transparent;
+  }
+  .information__header-title {
+    font-size: 50px;
+  }
+  .br-desktop {
+    display: block;
+  }
+  .information__list-wrapper {
+    margin-top: -17px;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .information__list {
+    margin-top: 57px;
+    margin-left: -52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .information__item {
+    width: 26%;
+    margin-left: 52px;
+    margin-bottom: 25px;
+  }
+  .information__item:first-child {
+    padding-left: 25px;
+  }
+  .information__item:nth-child(3n+3) {
+    padding-right: 35px;
+  }
+  .information__item:nth-child(3n+1) {
+    padding-left: 25px;
+  }
+  .information__item:last-child {
+    margin-bottom: 0;
+  }
+  .information__title {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .information__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .information__images {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .information__image:nth-child(-n+2) {
+    display: block;
+  }
+  .information__image-wrapper {
+    min-width: 186px;
+  }
+}
 .research {
   display: none;
 }
@@ -462,7 +528,36 @@ img {
 }
 @media (min-width: 1200px) {
   .research {
+    padding: 13px 0px 61px;
     background-color: #f2f2f2;
+  }
+  .research__wrapper-top {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 99px 0px 84px;
+    background-image: url("../img/24hours-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+  .research__wrapper {
+    margin-left: 370px;
+  }
+  .research__title {
+    margin-top: 23px;
+    margin-bottom: 23px;
+    line-height: 30px;
+  }
+  .research__br {
+    display: none;
+  }
+  .research__description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .research__button {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 .reviews {
