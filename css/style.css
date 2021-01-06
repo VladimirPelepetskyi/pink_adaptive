@@ -1345,3 +1345,78 @@ img {
     min-height: 197px;
   }
 }
+.user-photos {
+  padding: 0px 0px 0px;
+}
+.user-photos__description {
+  margin: 0;
+  padding: 0;
+  padding: 47px 35px;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+  text-align: center;
+}
+.user-photos__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.user-photos__item {
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+.user-photos_wrapper-picture {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0px;
+  text-align: center;
+}
+.user-photos-wrapper {
+  padding: 20px;
+}
+.user-photos__author-name {
+  margin-bottom: 4px;
+  display: inline-block;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #283645;
+}
+.user-photos__publish-time {
+  display: inline-block;
+  font-family: "OpenSans-Light";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: #283645;
+  text-transform: uppercase;
+}
+.user-photos__item-description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283645;
+  text-align: left;
+}
+.user-photos__likes {
+  display: block;
+  padding-left: 31px;
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #d22856;
+  text-transform: uppercase;
+  background-image: url(../img/like.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
+}
