@@ -52,6 +52,7 @@ input[type="radio"].visually-hidden {
 }
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .page-header {
@@ -1365,8 +1366,11 @@ img {
   list-style: none;
 }
 .user-photos__item {
+  padding: 0px 20px;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+}
+.user-photos__item-of-day {
+  padding: 0;
 }
 .user-photos_wrapper-picture {
   margin: 0;
@@ -1375,8 +1379,12 @@ img {
   line-height: 0px;
   text-align: center;
 }
-.user-photos-wrapper {
+.user-photos__wrapper {
   padding: 20px;
+  background-color: #f2f2f2;
+}
+.user-photos__author-of-day {
+  margin: 0px 20px;
 }
 .user-photos__author-name {
   margin-bottom: 4px;
