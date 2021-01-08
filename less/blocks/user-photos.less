@@ -96,3 +96,33 @@
 	background-repeat: no-repeat;
 	background-position: 0;
 }
+
+@media (min-width:@tablet-width) {
+	.user-photos__description {
+		padding: 95px 45px 74px;
+		font-size: 18px;
+	}
+
+	.user-photos__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.user-photos__item {
+		width: 300px/660px * 100%;
+
+		img {
+			width: auto;
+		}
+	}
+
+	.user-photos__item-of-day {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+
+	}
+}

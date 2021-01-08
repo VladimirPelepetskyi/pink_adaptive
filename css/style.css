@@ -1428,6 +1428,29 @@ img {
   background-repeat: no-repeat;
   background-position: 0;
 }
+@media (min-width: 660px) {
+  .user-photos__description {
+    padding: 95px 45px 74px;
+    font-size: 18px;
+  }
+  .user-photos__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .user-photos__item {
+    width: 45.45454545%;
+  }
+  .user-photos__item img {
+    width: auto;
+  }
+  .user-photos__item-of-day {
+    width: 100%;
+  }
+  .user-photos__item-of-day img {
+    width: 100%;
+  }
+}
 .upload {
   position: relative;
   padding-bottom: 41px;
