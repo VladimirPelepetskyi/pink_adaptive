@@ -1466,17 +1466,23 @@ img {
 .upload__form {
   padding: 0px 20px;
 }
+.upload__list-wrapper {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+}
 .upload__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 .upload__item {
-  width: 48px;
-  margin-left: 35px;
+  width: 25%;
   margin-bottom: 10px;
   text-align: center;
 }
