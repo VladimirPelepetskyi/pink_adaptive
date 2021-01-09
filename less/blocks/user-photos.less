@@ -1,3 +1,7 @@
+.user-photos img {
+	width: 100%;
+}
+
 .user-photos {
 	padding: 0px 0px 0px;
 }
@@ -22,11 +26,42 @@
 	padding: 0px 20px;
 	margin-bottom: 20px;
 
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	//	background-color: #f2f2f2;
 }
 
-.user-photos__item-of-day {
+.user-photos__panorama {
+	position: relative;
+
 	padding: 0;
+	margin-bottom: 20px;
+
+	&::before {
+		content: 'Панорама дня';
+		position: absolute;
+		top: 0;
+		right: 6.25%;
+
+		width: 140px;
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-family: "OpenSans-Bold";
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: bold;
+		color: #ffffff;
+		text-transform: uppercase;
+
+		background-color: #d22856;
+
+		z-index: 5;
+	}
 }
 
 .user-photos_wrapper-picture {
@@ -98,31 +133,105 @@
 }
 
 @media (min-width:@tablet-width) {
+	.user-photos img {
+		width: auto;
+	}
+
 	.user-photos__description {
 		padding: 95px 45px 74px;
+
 		font-size: 18px;
 	}
 
+	.user-photos__panorama {
+		max-width: 1400px;
+		margin: 0 auto 50px;
+
+		&::before {
+			top: 57px/624.906px *100%;
+			right: 20px/660px *100%;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
 	.user-photos__list {
+		.index-central;
+		padding: 0px 20px;
+
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@media (min-width:750px) and (max-width:959px) {
+			justify-content: space-around;
+			margin-left: -20px;
+		}
 	}
 
 	.user-photos__item {
-		width: 300px/660px * 100%;
+		padding: 0;
+		width: 300px;
+
+		@media (min-width:750px) and (max-width:959px) {
+			margin-left: 20px;
+		}
 
 		img {
 			width: auto;
 		}
 	}
 
-	.user-photos__item-of-day {
-		width: 100%;
+	.user-photos__wrapper {
+		position: relative;
+		padding: 22.5px 30px;
+		min-height: 155px;
+		box-sizing: border-box;
 
-		img {
-			width: 100%;
+		@media (min-width:960px) {
+			.index-central;
 		}
+	}
 
+	.user-photos__author-of-day {
+		padding: 17px 30px;
+		min-height: 0;
+	}
+
+	.user-photos__likes {
+		position: absolute;
+		bottom: 24px/155px * 100%;
+		width: 80%;
+
+		padding: 0;
+		background-position: 100%;
+	}
+
+	.user-photos__panorama .user-photos__likes {
+		top: 18px/121px *100%;
+		right: 30px;
+		bottom: auto;
+
+		width: auto;
+		padding-right: 43px;
+	}
+}
+
+@media (min-width:960px) {
+	.user-photos__panorama {
+		&::before {
+			top: 54px/525.797px *100%;
+			right: 130px/960px *100%;
+		}
+	}
+
+	.user-photos__list {
+		padding: 0px 10px;
+	}
+
+	.user-photos__item {
+		margin-bottom: 50px;
 	}
 }
