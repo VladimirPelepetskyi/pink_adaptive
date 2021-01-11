@@ -234,6 +234,8 @@
 	}
 
 	.upload__form {
+		position: relative;
+
 		padding: 9px 18px 0px 56px;
 		width: 50%;
 
@@ -242,8 +244,41 @@
 
 		box-sizing: border-box;
 
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 54px;
+			left: 0px;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(40, 54, 69, 0.1);
+			box-shadow: 0 71px 0 0 rgba(40, 54, 69, 0.1), 0 144px 0 0 rgba(40, 54, 69, 0.1);
+		}
+
+		@media (min-width:660px) and (max-width:719px) {
+			&::after {
+				width: 82%;
+				left: auto;
+				right: 0;
+			}
+		}
+
+		@media (min-width:960px) {
+			&::after {
+				top: 56px;
+				box-shadow: 0 77px 0 0 rgba(40, 54, 69, 0.1), 0 148px 0 0 rgba(40, 54, 69, 0.1);
+			}
+		}
+
+
 		@media (min-width:720px) {
 			padding-left: 0;
+		}
+
+		@media (min-width:960px) {
+			padding: 0;
+			width: 51.25%;
 		}
 	}
 
@@ -256,10 +291,32 @@
 		width: auto;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 	}
 
-	@media (max-width:960px) {
+	.upload__item {
+		margin-bottom: 46px;
+		width: auto;
+
+		&:last-child {
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width:960px) {
+		.upload__item {
+			margin-bottom: 29px;
+
+			&:last-child {
+				margin-top: 2px;
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+	@media (max-width:959px) {
 		.upload__item--framing svg {
 			width: 22px;
 			height: 22px;
@@ -276,6 +333,28 @@
 		}
 	}
 
+	@media (min-width:960px) {
+		.upload__toggle--framing {
+			&::before {
+				left: 69px;
+			}
+		}
+
+		.upload__toggle--filling {
+			&::before {
+				left: auto;
+				right: 27px;
+			}
+		}
+
+		.upload__toggle--contrast {
+			&::before {
+				left: auto;
+				right: 114px;
+			}
+		}
+	}
+
 	.upload__range-controls {
 		padding: 0;
 		padding-top: 10px;
@@ -285,6 +364,11 @@
 		height: auto;
 		display: flex;
 		flex-direction: column;
+
+		@media (min-width:960px) {
+			padding-top: 22px;
+			margin-left: 48px;
+		}
 
 	}
 
@@ -300,10 +384,32 @@
 
 	}
 
-
+	.upload_button-wrapper {
+		margin-top: auto;
+	}
 
 	.upload__button-submit {
-		margin-top: auto;
+		width: 100%;
 		margin-bottom: 24px;
+	}
+
+
+	@media (min-width:960px) {
+
+		.upload_button-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.upload__button-submit {
+
+			width: 183px/410px * 100%;
+			margin-bottom: 0px;
+		}
+
+		.upload__button-reset {
+			margin-top: auto;
+			width: 183px/410px * 100%;
+		}
 	}
 }
