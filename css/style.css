@@ -225,6 +225,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 31px;
+  padding: 0px 45px;
   font-family: "OpenSans-Light";
   font-size: 24px;
   font-weight: lighter;
@@ -251,7 +252,10 @@ img {
     top: auto;
   }
   .main-nav__title {
+    margin: 0 auto;
+    max-width: 940px;
     margin-top: 74px;
+    padding: 0px 93px;
     font-size: 50px;
   }
 }
@@ -308,6 +312,7 @@ img {
   }
   .main-nav__title {
     margin-top: 67px;
+    padding: 0px 190px;
   }
   .main-nav--nojs .main-nav__wrapper-logo {
     background-color: transparent;
