@@ -45,81 +45,86 @@
 	</header>
 	<main class="inner-page">
 		<section class="contest">
-			<h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+			<h1 class="visually-hidden">Форма для участия в конкурсе</h1>
+			<h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__title-tablet">Пожалуйста, заполните форму ниже:</span></h2>
 			<form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
-				<h2 class="contest__form-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-				<fieldset class="contest__contacts contacts">
-					<ul class="contacts__list">
-						<li class="contacts__item">
-							<label class="contacts__name" for="surname">Фамилия:</label>
-							<input class="contacts__input" type="text" name="Surname" id="surname" placeholder="Укажите фамилию *" aria-label="Введите вашу фамилию" required>
+				<!--
+совпадают:
+1 и 3,
+2 и 4
+-->
+				<fieldset class="contest__contacts fieldset__one-three">
+					<ul class="person__list list__one-three">
+						<li class="person__item item__one-three">
+							<label class="person__name name__one-three" for="surname">Фамилия:</label>
+							<input class="person__input input__one-three" type="text" name="Surname" id="surname" placeholder="Укажите фамилию *" aria-label="Введите вашу фамилию" required>
 						</li>
-						<li class="contacts__item">
-							<label class="contacts__name" for="name">Имя:</label>
-							<input class="contacts__input" type="text" name="Name" id="name" placeholder="Введите ваше имя *" aria-label="Введите ваше имя" required>
+						<li class="person__item item__one-three">
+							<label class="person__name person__name name__one-three" for="name">Имя:</label>
+							<input class="person__input input__one-three" type="text" name="Name" id="name" placeholder="Введите ваше имя *" aria-label="Введите ваше имя" required>
 						</li>
-						<li class="contacts__item">
-							<label class="contacts__name" for="patronymic">Отчество:</label>
-							<input class="contacts__input" type="text" name="Patronymic" id="patronymic" placeholder="Ну и отчество тоже" aria-label="Введите ваше отчество">
+						<li class="person__item item__one-three">
+							<label class="person__name person__name name__one-three" for="patronymic">Отчество:</label>
+							<input class="person__input input__one-three" type="text" name="Patronymic" id="patronymic" placeholder="Ну и отчество тоже" aria-label="Введите ваше отчество">
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="contest__achievements achievements">
-					<legend class="contest__achievements-title">Ваши безбашенные достижения в путешествии</legend>
-					<ul class="achievements__list">
-						<li class="achievements__item">
+				<fieldset class="contest__achievements fieldset__two-four">
+					<legend class="contest__achievements-title title__two-four">Ваши безбашенные достижения в путешествии</legend>
+					<ul class="achievements__list list__two-four">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="selfie-with-shark" id="selfie-checkbox" checked>
-							<label class="achievements__name" for="selfie-checkbox"><span>Сделал селфи с акулой</span></label>
+							<label class="achievements__name name__two-four" for="selfie-checkbox">Сделал селфи с акулой</label>
 						</li>
-						<li class="achievements__item">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="burned-on-the-beach" id="burned-checkbox" checked>
-							<label class="achievements__name" for="burned-checkbox"><span>Обгорел на пляже</span></label>
+							<label class="achievements__name name__two-four" for="burned-checkbox">Обгорел на пляже</label>
 						</li>
-						<li class="achievements__item">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="saw-Chuck-Norris" id="Chuck-Norris-checkbox">
-							<label class="achievements__name" for="Chuck-Norris-checkbox"><span>Видел Чака Норриса</span></label>
+							<label class="achievements__name name__two-four" for="Chuck-Norris-checkbox">Видел Чака Норриса</label>
 						</li>
-						<li class="achievements__item">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="souvenirs" id="souvenirs-checkbox">
-							<label class="achievements__name" for="souvenirs-checkbox"><span>Накупил сувениров</span></label>
+							<label class="achievements__name name__two-four" for="souvenirs-checkbox">Накупил сувениров</label>
 						</li>
-						<li class="achievements__item">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="tower" id="tower-checkbox" checked>
-							<label class="achievements__name" for="tower-checkbox"><span>Удержал башню</span></label>
+							<label class="achievements__name name__two-four" for="tower-checkbox">Удержал башню</label>
 						</li>
-						<li class="achievements__item">
+						<li class="achievements__item item__two-four">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="hotel-checkbox">
-							<label class="achievements__name" for="hotel-checkbox"><span>Разгромил отель</span></label>
+							<label class="achievements__name name__two-four" for="hotel-checkbox">Разгромил отель</label>
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="contest__connection connection">
-					<legend class="contest__connection-title">Контактная информация</legend>
-					<ul class="connection__list">
-						<li class="connection__item">
-							<label class="connection__name" for="phone-number">Номер телефона</label>
-							<input class="connection__input" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста" aria-label="Введите ваш номер телефона">
+				<fieldset class="contest__connection fieldset__one-three">
+					<legend class="contest__connection-title title__one-three">Контактная информация</legend>
+					<ul class="connection__list list__one-three">
+						<li class="connection__item item__one-three">
+							<label class="connection__name name__one-three" for="phone-number">Номер телефона</label>
+							<input class="connection__input input__one-three" type="text" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста" aria-label="Введите ваш номер телефона">
 						</li>
-						<li class="connection__item">
-							<label class="connection__name" for="email">адрес почты</label>
-							<input class="connection__input" type="email" name="email" id="email" placeholder="Введите почту *" aria-label="Введите вашу почту" required>
+						<li class="connection__item connection__item item__one-three">
+							<label class="connection__name name__one-three" for="email">Адрес почты</label>
+							<input class="connection__input input__one-three" type="email" name="email" id="email" placeholder="Введите почту *" aria-label="Введите вашу почту" required>
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="contest__apps apps">
-					<legend class="contest__apps-title">С каким приложением путешествовали?</legend>
-					<ul class="apps__list">
-						<li class="apps__item">
+				<fieldset class="contest__apps fieldset__two-four">
+					<legend class="contest__apps-title title__two-four">С каким приложением путешествовали?</legend>
+					<ul class="apps__list list__two-four">
+						<li class="apps__item item__two-four">
 							<input class="visually-hidden filter-input-radio" type="radio" name="pink-app" value="ios" id="ios-radio" checked>
-							<label class="apps__name" for="ios-radio">Pink для iOS</label>
+							<label class="apps__name name__two-four" for="ios-radio"><span>Pink для iOS</span></label>
 						</li>
-						<li class="apps__item">
+						<li class="apps__item item__two-four">
 							<input class="visually-hidden filter-input-radio" type="radio" name="pink-app" value="android" id="android-radio">
-							<label class="apps__name" for="android-radio">Pink на Android</label>
+							<label class="apps__name name__two-four" for="android-radio"><span>Pink на Android</span></label>
 						</li>
-						<li class="apps__item">
+						<li class="apps__item item__two-four">
 							<input class="visually-hidden filter-input-radio" type="radio" name="pink-app" value="windows" id="windows-radio">
-							<label class="apps__name" for="windows-radio">Windows Phone</label>
+							<label class="apps__name name__two-four" for="windows-radio"><span>Windows Phone</span></label>
 						</li>
 					</ul>
 				</fieldset>

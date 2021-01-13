@@ -1869,3 +1869,122 @@ img {
     width: 44.63414634%;
   }
 }
+.contest__title {
+  margin: 0;
+  padding: 0;
+  padding: 47px 20px 41px;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+  text-align: center;
+}
+.contest__title-tablet {
+  display: none;
+}
+.contest__form {
+  display: flex;
+  flex-direction: column;
+  font-family: "OpenSans-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.fieldset__one-three {
+  margin: 0 0 42px 0;
+  padding: 0 20px;
+  border: 0;
+}
+.list__one-three {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item__one-three {
+  margin-bottom: 20px;
+}
+.item__one-three:last-child {
+  margin-bottom: 0;
+}
+.name__one-three {
+  margin-left: 23px;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: left;
+}
+.input__one-three {
+  width: 100%;
+  padding: 17px 20px;
+  font-family: "OpenSans-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+.input__one-three::placeholder {
+  color: #283645;
+}
+.fieldset__two-four {
+  margin: 0;
+  padding: 0px 0px 34px;
+  margin-bottom: 33px;
+  background-color: #f2f2f2;
+  border: 0;
+}
+.title__two-four {
+  width: 100%;
+  padding: 40px 50px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.list__two-four {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 20px;
+}
+.item__two-four {
+  margin-bottom: 50px;
+}
+.name__two-four {
+  position: relative;
+  margin-left: 70px;
+  display: block;
+  color: #283645;
+}
+.name__two-four::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -61px;
+  width: 22px;
+  height: 16px;
+  background-image: url('../img/tick.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.contest__connection-title {
+  display: none;
+}
