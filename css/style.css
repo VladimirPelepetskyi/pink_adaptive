@@ -1918,7 +1918,7 @@ img {
 }
 .input__one-three {
   width: 100%;
-  padding: 17px 20px;
+  padding: 12.5px 20px;
   font-family: "OpenSans-Regular";
   font-size: 18px;
   line-height: 30px;
@@ -1932,7 +1932,7 @@ img {
 }
 .fieldset__two-four {
   margin: 0;
-  padding: 0px 0px 34px;
+  padding: 0px 0px 43px;
   margin-bottom: 33px;
   background-color: #f2f2f2;
   border: 0;
@@ -1955,6 +1955,9 @@ img {
 }
 .item__two-four {
   margin-bottom: 50px;
+}
+.item__two-four:last-child {
+  margin-bottom: 0;
 }
 .name__two-four {
   position: relative;
@@ -2054,6 +2057,192 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
-.contest__required-fields span {
+.contest__required-fields .star {
   color: #d22856;
+}
+.contest__required-desktop {
+  display: none;
+}
+@media (min-width: 660px) {
+  .contest__form {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0px 20px;
+    display: flex;
+  }
+  .contest__title {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 94px 80px 68px;
+    font-size: 18px;
+  }
+  .contest__title-tablet {
+    display: inline-block;
+  }
+  .fieldset__one-three {
+    padding: 0;
+  }
+  .fieldset__two-four {
+    padding: 50px 60px;
+    background: none;
+    border: 2px solid #e5e5e5;
+  }
+  .title__two-four {
+    width: auto;
+    background: none;
+    line-height: 30px;
+  }
+  .name__two-four {
+    margin-left: 61px;
+  }
+  .apps__name::before,
+  .achievements__name::before {
+    left: -61px;
+  }
+  .filter-input-checkbox:checked + label::after {
+    left: -52.5px;
+  }
+  .filter-input-radio:checked + label::after {
+    left: -49.5px;
+  }
+  .contest__contacts {
+    margin-bottom: 52px;
+    order: -3;
+  }
+  .person__item {
+    margin-bottom: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .person__name {
+    margin: 0px 20px 0px 0px;
+  }
+  .contest__connection {
+    margin-bottom: 59px;
+    padding: 38px 60px 25px;
+    order: -1;
+    border: 2px solid #e5e5e5;
+  }
+  .contest__connection-title {
+    padding: 0px 32px;
+    display: table;
+  }
+  .connection__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .connection__item:last-child {
+    margin-bottom: 0;
+  }
+  .connection__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 59px;
+    background-color: #e5e5e5;
+  }
+  .connection__item--phone::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+  }
+  .connection__item--letter::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 18px;
+    height: 13px;
+    background-image: url("../img/icon-letter.svg");
+    background-repeat: no-repeat;
+  }
+  .connection__name {
+    margin: 11px 0px 0px 20px;
+    order: 1;
+  }
+  .contest__apps {
+    margin-bottom: 52px;
+    order: -2;
+  }
+  .contest__apps-title {
+    padding: 0px 25px 0px;
+  }
+  .contest__achievements {
+    margin-bottom: 52px;
+  }
+  .contest__achievements-title {
+    padding: 0px 32px 0px;
+  }
+  .apps__list,
+  .achievements__list {
+    padding: 0;
+  }
+  .contest__emotions {
+    padding: 33px 60px 51px;
+    border: 2px solid #e5e5e5;
+  }
+  .contest__emotions-title {
+    width: auto;
+    padding: 0px 40px;
+    line-height: 30px;
+  }
+  .contest__bottom-wrapper {
+    margin: 67px 0px 50px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contest__button {
+    margin-bottom: 0;
+    width: 296px;
+  }
+}
+@media (min-width: 1200px) {
+  .contest__title {
+    padding-right: 205px;
+    padding-left: 205px;
+  }
+  .contest__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contest__contacts {
+    width: 46.27659574%;
+  }
+  .contest__apps {
+    padding: 0;
+    margin-left: auto;
+    margin-top: -20px;
+    width: 45.85106383%;
+    box-sizing: border-box;
+  }
+  .apps__list {
+    padding: 41px 74px 55px;
+  }
+  .apps__item {
+    margin-bottom: 43px;
+  }
+  .contest__connection {
+    width: 100%;
+  }
+  .contest__achievements {
+    width: 100%;
+  }
+  .contest__emotions {
+    width: 100%;
+  }
+  .contest__bottom-wrapper {
+    width: 100%;
+  }
 }
