@@ -77,7 +77,18 @@
 	border: 3px solid #ffffff;
 	border-radius: 50%;
 	background-color: rgba(40, 54, 69, 0.3);
+
+	&:not(.review__toggle--active):hover {
+		background-color: rgba(40, 54, 69, 0.6);
+		outline: none;
+	}
+
+	&:not(.review__toggle--active):active {
+		background-color: rgba(40, 54, 69, 0.1);
+		outline: none;
+	}
 }
+
 
 .review__toggle--active {
 	background-color: #ffffff;
@@ -187,6 +198,14 @@
 			background-color: rgba(40, 54, 69, 0.3);
 		}
 
+		&:hover::before {
+			background-color: rgba(40, 54, 69, 0.6);
+		}
+
+		&:active::before {
+			background-color: rgba(40, 54, 69, 0.1);
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -198,6 +217,14 @@
 
 			transform: rotate(-45deg);
 			background-color: rgba(40, 54, 69, 0.3);
+		}
+
+		&:hover::after {
+			background-color: rgba(40, 54, 69, 0.6);
+		}
+
+		&:active::after {
+			background-color: rgba(40, 54, 69, 0.1);
 		}
 	}
 
@@ -215,6 +242,14 @@
 			background-color: rgba(40, 54, 69, 0.3);
 		}
 
+		&:hover::before {
+			background-color: rgba(40, 54, 69, 0.6);
+		}
+
+		&:active::before {
+			background-color: rgba(40, 54, 69, 0.1);
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -226,6 +261,14 @@
 
 			transform: rotate(45deg);
 			background-color: rgba(40, 54, 69, 0.3);
+		}
+
+		&:hover::after {
+			background-color: rgba(40, 54, 69, 0.6);
+		}
+
+		&:active::after {
+			background-color: rgba(40, 54, 69, 0.1);
 		}
 	}
 

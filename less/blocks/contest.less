@@ -64,10 +64,26 @@
 
 	box-sizing: border-box;
 	border: 2px solid #e5e5e5;
+	cursor: pointer;
 
 	&::placeholder {
 		color: #283645;
 	}
+
+	&:hover {
+		border: 2px solid #283645;
+	}
+
+	&:focus {
+		outline: none;
+		border: 2px solid #d22856;
+	}
+
+	&:active {
+		outline: none;
+		border: 2px solid #d22856;
+	}
+
 }
 
 .fieldset__two-four {
@@ -114,18 +130,31 @@
 	color: #283645;
 }
 
-.achievements__name::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: -70px;
+.achievements__name {
+	cursor: pointer;
 
-	width: 35px;
-	height: 35px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -70px;
 
-	border: 2px solid #e5e5e5;
-	background-color: #ffffff;
+		width: 35px;
+		height: 35px;
+
+		border: 2px solid #e5e5e5;
+		background-color: #ffffff;
+	}
+
+	&:hover::before {
+		border: 2px solid #283645;
+	}
+
+	&:active::before {
+		border: 2px solid #d22856;
+	}
+
 }
 
 
@@ -152,19 +181,31 @@
 	margin-bottom: 0;
 }
 
-.apps__name::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: -70px;
+.apps__name {
+	cursor: pointer;
 
-	width: 35px;
-	height: 35px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -70px;
 
-	border: 2px solid #e5e5e5;
-	background-color: #ffffff;
-	border-radius: 50%;
+		width: 35px;
+		height: 35px;
+
+		border: 2px solid #e5e5e5;
+		background-color: #ffffff;
+		border-radius: 50%;
+	}
+
+	&:hover::before {
+		border: 2px solid #283645;
+	}
+
+	&:active::before {
+		border: 2px solid #d22856;
+	}
 }
 
 .filter-input-radio:checked + label::after {
@@ -223,6 +264,20 @@
 	background-color: #2aab6d;
 	border: 0;
 	border-radius: 3px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #1c9b5e;
+	}
+
+	&:active {
+		outline: none;
+		color: rgba(255, 255, 255, 0.3);
+	}
+
+	&:disabled {
+		background-color: #e5e5e5;
+	}
 }
 
 .contest__required-fields {
@@ -277,7 +332,7 @@
 	}
 
 	.name__two-four {
-		margin-left: 61px;
+		margin-left: 60px;
 	}
 
 	.apps__name::before,
@@ -291,6 +346,10 @@
 
 	.filter-input-radio:checked + label::after {
 		left: -49.5px;
+
+		@media (min-width:940px) {
+			left: -48.5px;
+		}
 	}
 
 	.contest__contacts {
@@ -331,17 +390,18 @@
 		margin-bottom: 30px;
 
 		&:last-child {
+			margin-top: -0.4px;
 			margin-bottom: 0;
 		}
 
 		&::before {
 			content: "";
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 1px;
+			right: 1px;
 
 			width: 62px;
-			height: 59px;
+			height: 57px;
 
 			background-color: #e5e5e5;
 		}
@@ -479,10 +539,14 @@
 
 	.connection__item {
 		margin: 0;
+
+		&:last-child {
+			margin: 0;
+		}
 	}
 
 	.contest__achievements {
-		padding: 37px 60px 12px;
+		padding: 37px 58px 12px;
 		width: 100%;
 	}
 
@@ -493,7 +557,9 @@
 	}
 
 	.achievements__item {
-		width: 272px/816px *100%;
+		width: 272px/820px *100%;
+
+
 		margin-bottom: 43px;
 
 		&:last-child {

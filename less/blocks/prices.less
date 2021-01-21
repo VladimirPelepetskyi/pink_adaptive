@@ -158,6 +158,16 @@
 	border: 3px solid #f2f2f2;
 	border-radius: 50%;
 	background-color: rgba(40, 54, 69, 0.3);
+
+	&:not(.price__toggle--active):hover {
+		background-color: rgba(40, 54, 69, 0.6);
+		outline: none;
+	}
+
+	&:not(.price__toggle--active):active {
+		background-color: rgba(40, 54, 69, 0.1);
+		outline: none;
+	}
 }
 
 .price__toggle--active {
