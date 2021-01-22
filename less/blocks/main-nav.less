@@ -21,7 +21,7 @@
 }
 
 .main-nav__logo {
-	cursor: default;
+	cursor: pointer;
 }
 
 .main-nav__inner-page {
@@ -199,6 +199,26 @@
 	text-align: center;
 }
 
+.logotype-mobile,
+.logotype-tablet,
+.logotype-desktop {
+	&:hover:not(:active) path {
+		fill: #d22856;
+	}
+
+	&:active path {
+		opacity: 0.3;
+	}
+}
+
+.logotype-tablet {
+	display: none;
+}
+
+.logotype-desktop {
+	display: none;
+}
+
 @media (min-width:@tablet-width) {
 	.main-nav__wrapper-logo {
 		.index-central;
@@ -234,6 +254,14 @@
 		padding: 0px 93px;
 
 		font-size: 50px;
+	}
+
+	.logotype-mobile {
+		display: none;
+	}
+
+	.logotype-tablet {
+		display: block;
 	}
 }
 
@@ -347,5 +375,13 @@
 
 	.main-nav--nojs .main-nav__list {
 		border-top: 0;
+	}
+
+	.logotype-tablet {
+		display: none;
+	}
+
+	.logotype-desktop {
+		display: block;
 	}
 }
