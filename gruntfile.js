@@ -37,10 +37,9 @@ module.exports = function (grunt) {
 		uglify: {
 			style: {
 				files: {
-					"scripts/logform.min.js": ["scripts/logform.js"],
-					"scripts/advantages__toggles.min.js": ["scripts/advantages__toggles.js"],
 					"scripts/failure.min.js": ["scripts/failure.js"],
 					"scripts/main-nav.min.js": ["scripts/main-nav.js"],
+					"scripts/prices.min.js": ["scripts/prices.js"],
 					"scripts/reviews__toggles.min.js": ["scripts/reviews__toggles.js"],
 					"scripts/success.min.js": ["scripts/success.js"]
 				}
@@ -103,7 +102,9 @@ module.exports = function (grunt) {
 		"less",
 		"postcss",
 		"csso",
-		"uglify"
+		"uglify",
+		"imagemin",
+		"cwebp"
 	]);
 
 	grunt.registerTask("go", [
